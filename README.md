@@ -1,6 +1,6 @@
 # Machine Learning for Industry Project
 
-This project was conducted in a team of three students. 
+This project was conducted in a team of three students. The python version used during development was python 3.9.6.
 
 ## Machine Learning pipeline
 In order to run the ML pipeline, open this folder in your terminal and run the file main.py.
