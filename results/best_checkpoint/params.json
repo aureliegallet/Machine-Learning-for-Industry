@@ -1,0 +1,9 @@
+{
+  "feature_engineering": "pca",
+  "hidden_size": 25,
+  "input_size_models": 39,
+  "lr": 0.09844186889924886,
+  "num_features": 43,
+  "num_layers": 1,
+  "num_models": 9
+}

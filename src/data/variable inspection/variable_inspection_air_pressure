@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv("../../../Data/processed/climate_data.csv")
+data_to_inspect = data[["PG", "PN", "PX"]]
+data_to_inspect["VAR"] = (data["PX"] - data["PN"])
+transformed_data = data_to_inspect
+
+figure, axis = plt.subplots(1, 5, figsize=(15, 5))  # Adjusted figure size for clarity
+
+# Plotting each column
+for i, column in enumerate(transformed_data.columns):
+    axis[i].scatter(range(len(transformed_data[column])), transformed_data[column])
+    axis[i].set_title("Daily values for the indicator " + column)
+    axis[i].set_xlabel("Day")
+    axis[i].set_ylabel(column)
+
+# Show the entire figure
+plt.tight_layout()  # Adjusts the layout to avoid overlap
+plt.show()
+
+print(transformed_data.corr(method="pearson"))
