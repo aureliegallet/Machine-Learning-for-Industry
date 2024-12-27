@@ -1,5 +1,7 @@
 # Machine Learning for Industry Project
 
+This project was conducted in a team of three students. 
+
 ## Machine Learning pipeline
 In order to run the ML pipeline, open this folder in your terminal and run the file main.py.
 Depending on your Python installation you may want to use `python main.py` or `python3 main.py`.
