@@ -7,7 +7,7 @@ import subprocess
 from deployment.process_data import DataProcessor
 
 # MongoDB
-mongo_client = MongoClient("REMOVED")
+mongo_client = MongoClient("") # Contact me for the URI
 db = mongo_client["predictions_db"]
 predictions_collection = db["predictions"]
 past_data_collection = db["past_data"]
